@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 2;
+     
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *:after{
+    box-sizing: inherit;
+}
+
+/* globales */
+
+h1,
+h2,
+h3{
+    font-family: 'Roboto', sans-serif;
+     
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+}
+p{
+    text-align: justify;
+}
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+
+    display: block;
+}
+.fresas{
+     
+    height: 100;
+    object-fit: cover;
+}
+
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
+}
+.contenedor-title{
+    text-align: center;
+     
+    margin: 15px;
+}
+
+/* navegacion */
+.title{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 900;
+}
+h1  span{
+    color: rgb(69, 155, 225);
+}
+.nav-principal{
+    /* border-color: black ;
+    border-top-style: solid ;
+    border-width: 1px; */
+
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;  
+    transition: all 0.5s ease; 
+}
+
+.nav-principal a:hover{
+    color: #037bc0;
+     
+}
+.hero{
+    background-image: url('https://www.nicepng.com/png/detail/97-970436_frutas-hortalizas-y-verduras-imagens-de-frutas-png.png');
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    
+}
+.listado-link a{
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    font-size: 25px;
+    padding: 15px;
+    transition: all 0.5s ease ;
+    
+}
+ 
+.listado-link a:hover{
+    background-color: rgb(181, 181, 183);
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+ 
+ 
+
+.sobre-nosotros{
+    margin-top: 15px;
+    background-image: linear-gradient(to right, transparent 10%, rgb(248, 248, 248) 100%, rgb(255, 255, 255) 100%), url('https://img.freepik.com/foto-gratis/legumbres-frutas-pisos-cemento-negro_1150-20000.jpg?w=2000') ;
+    padding: 10rem 0;
+    background-position:left center;
+    background-repeat: no-repeat;
+    background-size: 50%, 120rem;
+}
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+     
+     
+}
+
+
+.parrafo-nosotros{
+    grid-column: 2/4;
+    padding:0 30px ;
+    text-align: justify;
+}
+.title-nosotros{
+    text-align: left;
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    
+}
+.texto-nosotros{
+    grid-column: 2/3;
+    color: white;
+    text-align: justify;
+}
+
+ 
+/* 
+listado de productos */
+
+
+.contenido-principal{
+    padding-top: 30px ;
+     
+}
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1px;
+    row-gap: 2px;
+}
+
+ 
+.producto:nth-child(1) {
+    height: 500px;
+    object-fit: cover;
+    grid-column-start:1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+.producto:nth-child(1) img {
+    height: 31.2rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+     
+}
+
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(242, 240, 240);
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+
+
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid rgb(218, 216, 216);
+}
+.producto:nth-child(5) {
+     
+    grid-column-start: 3;
+    grid-column-end: 5;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+.producto:nth-child(5) img {
+    height: 350px;
+}
+.producto:nth-child(4) img {
+    height: 350px;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+
+
+.producto{
+    background-color: #037bc0;
+}
+.info-producto{
+    padding: 0 50px ;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+
+}
+.info-producto a{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.info-producto a:hover{
+    background-color: rgb(215, 218, 215);
+    font-size: 15px;
+     
+}
+ 
+.precio {
+    font-size: 35px;
+}
+
+
+/* site footer */
+
+.site-footer h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.site-footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid black; 
+}
+
+.grid-footer{
+    display: flex;
+    gap: 2rem;
+}
+.grid-footer div {
+    flex: 1;
+}
+
+.footer-menu a{
+    display: block;
+}
+.footer-span{
+    color: rgb(69, 155, 225);
+}
+
+.copyright{
+
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+}
+
+
+/* info blog */
+
+.contenedor-blog{
+display: grid;
+grid-template-columns: 2fr 1fr;
+column-gap: 4rem;
+}
+
+.entrada{
+    border-bottom: 1px solid rgb(213, 212, 212);
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada-meta{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.entrada-meta span{
+    color: #037bc0;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+ 
+.entrada-blog a{
+    max-width: 240px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.entrada-blog a:hover {
+    background-color: rgb(19, 251, 7);
+    font-size: 18px;
+
+}
+
+.contenido-entrada-blog{
+    width: 40rem;
+    margin: auto;
+}
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap: 15px;
+
+}
+
+.galeria img {
+    padding: 10px 0;
+    width: 40rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+/* Formulario */
+.formulario{
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+.formulario legend {
+
+    background-color: #185b82;
+    color: white;
+    border-radius: 8px;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 10px 10px;
+}
+
+.campo label {
+    flex-basis: 70px;
+}
+
+.campo input[type="text"],  
+input[type="email"], 
+input[type="tel"], 
+textarea{
+    flex: 1;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(150, 148, 148);
+}
+ 
+.campo datalist {
+    border: 1px solid red;
+}
+
+.submit{
+      width: 100%;
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        color: black;
+        background-color: greenyellow;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+}
+
+.submit:hover {
+    background-color: rgb(19, 251, 7);
+    font-size: 18px;
+
+}
